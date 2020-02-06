@@ -31,3 +31,4 @@ override.tf.json
 #ignore secrets
 secrets.auto.tfvars
 main-backend.tf
+set-environmentvars.ps1
