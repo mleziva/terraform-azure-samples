@@ -4,6 +4,6 @@
 
 ### GettingStarted
 The basics for creating a storage account and storing state in Azure
-Rename secrets.auto.tfvars.example to secrets.auto.tfvars and put the actual secret values in there
+Because terraform doesn't allow using variables in backend config blocks, rename main-backend.tf.example to main-backend.tf and update with correct secrets
  
 ### tf
