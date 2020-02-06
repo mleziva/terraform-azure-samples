@@ -17,5 +17,5 @@ az storage container create --name $CONTAINER_NAME --account-name $STORAGE_ACCOU
 
 #environment variables for using MSI with terraform
 $Env:ARM_USE_MSI = "true"
-$Env:ARM_SUBSCRIPTION_ID = "ee2cbfbe-ccde-44e2-af02-3046cc1a04a1"
-$Env:ARM_TENANT_ID = "72f988bf-86f1-41af-91ab-2d7cd011db47"
+$Env:ARM_SUBSCRIPTION_ID = "yourvalue"
+$Env:ARM_TENANT_ID = "yourvalue"
