@@ -1,21 +1,5 @@
-variable "resource_group_name" {
-  description = "Name of the resource group."
-}
-
-variable "location" {
-  description = "Location of the cluster."
-}
-
-variable "aks_service_principal_app_id" {
-  description = "Application ID/Client ID  of the service principal. Used by AKS to manage AKS related resources on Azure like vms, subnets."
-}
-
-variable "aks_service_principal_client_secret" {
-  description = "Secret of the service principal. Used by AKS to manage Azure."
-}
-
-variable "aks_service_principal_object_id" {
-  description = "Object ID of the service principal."
+variable "environment" {
+  description = "Name of the environment"
 }
 
 variable "virtual_network_name" {
@@ -45,17 +29,17 @@ variable "app_gateway_subnet_address_prefix" {
 
 variable "app_gateway_name" {
   description = "Name of the Application Gateway."
-  default = "ApplicationGateway1"
+  default     = "ApplicationGateway1"
 }
 
 variable "app_gateway_sku" {
   description = "Name of the Application Gateway SKU."
-  default = "Standard_v2"
+  default     = "Standard_v2"
 }
 
 variable "app_gateway_tier" {
   description = "Tier of the Application Gateway SKU."
-  default = "Standard_v2"
+  default     = "Standard_v2"
 }
 
 variable "aks_name" {
@@ -123,4 +107,8 @@ variable "tags" {
   default = {
     source = "terraform"
   }
+}
+
+variable "service_principal_secret" {
+  description = "Secret for service principal"
 }
